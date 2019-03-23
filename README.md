@@ -2,13 +2,12 @@
 Simple mockable dependency injection
 
 ## API
-
 ### getDependencies
-
-`const deps = getDependencies(this, defaultDependencies)
+```
+const deps = getDependencies(this, defaultDependencies)
 
 ...doSomethingWith(deps)
-`
+```
 
 Used in the live function to be tested.
 
@@ -21,10 +20,11 @@ Similarly, the shape of the dependencies is up to you.
 
 ### setDependencies
 
-`setDependencies(key, mockDependencies)
+```
+setDependencies(key, mockDependencies)
 
 functionToBeTested.call(key, args)
-`
+```
 
 Used in the test harness.
 
